@@ -1,0 +1,82 @@
+body {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    font-size: x-large;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color:rgb(3, 56, 3);
+    text-align: center;
+}
+
+ul {
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type:none;
+}
+
+li {
+    padding: 15px;
+    background-color:palegreen;
+    border-radius:10px;
+    margin: 5px;
+}
+
+li.active {
+    background-color:rgb(3, 56, 3);
+    color: palegreen;
+}
+
+.content {
+    display:none;
+}
+
+.content.active {
+    display:block;
+}
+
+h2 {
+    color: rgb(3, 56, 3);
+}
+
+.coinButtons button {
+    margin:2px;
+}
+
+#coinImage {
+    margin:25px;
+}
+
+input {
+    font-size: x-large;
+}
+
+#result {
+    padding: 3px;
+    font-size: xx-large;
+}
+
+.tooBig {
+    background-color: pink;
+    color:blue;
+}
+
+.tooSmall {
+    background-color: lightblue;
+    color: blue;
+}
+
+.tooMany {
+    background-color: red;
+    color: black;
+}
+
+.justRight {
+    background-color: lightgreen;
+    color: green;
+}

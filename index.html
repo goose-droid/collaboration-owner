@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabbed Content</title>
+</head>
+<body>
+    <h1>Oliver Christensen</h1>
+    <h1>Shall we play a game?</h1>
+    <div class="tabs">
+        <ul>
+            <li class="trigger" data-target="#tab1">Coin Toss</li>
+            <li class="trigger" data-target="#tab2">Guessing Game</li>
+        </ul>
+        <div class="content coinToss" id="tab1">
+
+            <h2>Toss a Coin</h2>
+            <div class="coinButtons">
+                <button value="0">Heads</button>
+                <button value="1">Tails</button>
+            </div>
+
+            <img id="coinImage" src="both.jpg">
+
+            <div class="coinResults">
+            </div>
+
+        </div>
+        <div class="content guessing" id="tab2">
+            <h2>Number guessing game</h2>
+            <p>I have selected a random number between 1 and 100.<br>
+            See if you can guess it in 10 turns or fewer.<br>
+            I'll tell you if your guess was too high or too low.</p>
+    
+            <form>
+                <label for="guess">Enter a guess:</label>
+                <input type="text" id="guess">
+            </form>
+    
+            <p id="prevGuesses"></p>
+            <p><span id="result"></span></p>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="coin.js"></script>
+    <script src="guessing.js"></script>
+</body>
+</html>
